@@ -1,4 +1,10 @@
-$( document ).ready(function() {
+const search = document.getElementById('nav-search')
+
+search.oninput = ({ target }) => {
+    console.log(target.value)
+}
+
+$(document).ready(function () {
     jQuery.expr[':'].Contains = function(a,i,m){
         return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
     };
@@ -8,7 +14,7 @@ $( document ).ready(function() {
         if (!search) {
             //no search, show all results
             $("nav > ul > li").show();
-            
+
             if(typeof hideAllButCurrent === "function"){
                 //let's do what ever collapse wants to do
                 hideAllButCurrent();
