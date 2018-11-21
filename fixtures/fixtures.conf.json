@@ -4,11 +4,11 @@
     },
     "source": {
         "include": [
-            "fixtures/",
+            "fixtures/tmp/",
             "./README.md"
         ]
     },
-    "plugins": ["plugins/markdown"],
+    "plugins": ["plugins/markdown", "custom-tags/index.js"],
     "opts": {
         "encoding": "utf8",
         "template": "./",
@@ -49,6 +49,7 @@
         "collapse": true,
         "typedefs": true,
         "removeQuotes": "none",
+        "moduleName": "Testing Dash",
         "scripts": [],
         "menu":{
             "Github repo":{
