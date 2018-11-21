@@ -24,6 +24,6 @@
     "template"
   ],
   "dependencies": {
-    "kyanite": "^0.10.1"
+    "kyanite": "0.10.1"
   }
 }
