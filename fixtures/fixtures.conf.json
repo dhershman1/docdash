@@ -8,6 +8,7 @@
             "./README.md"
         ]
     },
+    "sourceType": "module",
     "plugins": ["plugins/markdown", "custom-tags/index.js"],
     "opts": {
         "encoding": "utf8",

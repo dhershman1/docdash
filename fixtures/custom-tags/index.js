@@ -9,8 +9,6 @@ exports.defineTags = function (dictionary) {
     mustHaveValue: true,
     onTagged (doclet, tag) {
       doclet.sig = tag.value.split(/\r|\n|\n\r/g)
-
-      console.log(doclet.sig)
     }
   })
 }

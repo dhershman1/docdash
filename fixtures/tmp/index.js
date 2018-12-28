@@ -1,5 +1,6 @@
 /**
  * @name nth
+ * @see first
  * @function
  * @since v0.1.0
  * @category List
